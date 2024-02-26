@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style=" background-color: rgb(38, 122, 149);">
+  <!-- w3schools example -->
+  
+  <div class="container-fluid bg-info">
+
+    <button data-bs-toggle="collapse" data-bs-target="#demo">Collapsible</button>
+
+    <div id="demo" class="collapse">
+      Lorem ipsum dolor text....
+    </div>
+
+  </div>
+  
+  <div class="container-fluid bg-info">
+
+    <a href="#demo" data-bs-toggle="collapse">Collapsible</a>
+
+    <div id="demo" class="collapse">
+      Lorem ipsum dolor text....
+    </div>
+  
+  </div>
+
+
+  <div class="container-fluid bg-info">
+    <div id="demo" class="collapse show">
+      Lorem ipsum dolor text....
+    </div>
+  </div>
+
+  <div class="container-fluid bg-info">
+    <div id="accordion">
+
+    <div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum..
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum..`
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum..
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>
