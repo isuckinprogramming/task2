@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style=" background-color: rgb(38, 122, 149);">
+  
+</body>
+
+<!-- BASIC - FIRST EXAMPLE -->
+  <div>
+    <h1>First Example</h1>
+    <p>No fade, ordinary modal.</p>
+    <!-- Button to Open the Modal -->
+    <button 
+      type="button" 
+      class="btn btn-primary" 
+      data-bs-toggle="modal" 
+      data-bs-target="#myModal">
+      Open modal
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            
+            <h4 class="modal-title">Default Modal Heading</h4>
+            
+            <button 
+              type="button" 
+              class="btn-close" 
+              data-bs-dismiss="modal">
+
+              <!-- this is not a good idea -->
+              <!-- CLOSE THE MODAL -->
+            
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos culpa corporis, accusamus consequuntur reprehenderit tempora repudiandae quasi et rerum cumque.
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+
+            <button 
+              type="button" 
+              class="btn btn-danger" 
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+  
+<!-- FADE - SECOND EXAMPLE -->
+  <div>
+    <h1>Second Example</h1>
+    <p>Modal with Fade.</p>
+    <!-- Button to Open the Modal -->
+    <button 
+      type="button" 
+      class="btn btn-primary" 
+      data-bs-toggle="modal" 
+      data-bs-target="#myFadingModal">
+      Open modal
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myFadingModal">
+      
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            
+            <h4 class="modal-title">Fading Modal Heading</h4>
+            
+            <button 
+              type="button" 
+              class="btn-close" 
+              data-bs-dismiss="modal">
+
+              <!-- this is not a good idea -->
+              <!-- CLOSE THE MODAL -->
+            
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos culpa corporis, accusamus consequuntur reprehenderit tempora repudiandae quasi et rerum cumque.
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+
+            <button 
+              type="button" 
+              class="btn btn-danger" 
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+
+        </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+  
+<!-- THIRD EXAMPLE -->
+
+  <div>
+    <h1>Third Examples - Modal Sizes
+      
+    </h1>
+    <p>Modal sizes. Three types: Small, Large, Extra-Large</p>
+
+    <!-- SMALL -->
+    <div>
+        <button 
+          type="button" 
+          class="btn btn-danger" 
+          data-bs-toggle="modal"
+          data-bs-target="#mySmallModal"  
+          >
+          Open the Small Modal
+        </button>
+
+        <div class="modal" id="mySmallModal">
+
+          <div class="modal-dialog modal-sm">
+
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h1 class="modal-title">Small header</h1>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente beatae enim nostrum temporibus quos natus quam provident distinctio fugit aut?</p>
+              </div>
+              
+              <div class="modal-footer">
+                
+                <!-- button[type="button" class="btn btn-danger" data-bs-dismiss="modal"]{Close the small modal} -->
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close the small modal</button>
+
+              </div>
+
+
+            </div>
+
+        </div>
+
+      </div>
+    
+      
+    
+    
+    </div>
+
+    <!-- LARGE -->
+
+    <div>
+      <h1>Large modal</h1>
+      <p>This is a large modal</p>
+    
+      <button
+        class="btn btn-info"
+        data-bs-toggle="modal"
+        data-bs-target="#myLargeModal"
+        >
+        Open the large modal
+      </button>
+
+      <div class="modal fade" id="myLargeModal">
+
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h3>This is a large modal.</h3>
+
+              <button type="button" class="btn btn-close" data-bs-dismiss="modal" ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                The size of a modal does not depend on the amount of text inside the modal.
+              </p>
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+            </div>
+          
+            
+          </div>
+        </div>
+
+      </div>
+    
+    </div>
+
+    <!-- Extra Large Modal -->
+    <div>
+      <h1>Extra Large modal</h1>
+      <p>THis is an extra large modal.
+         I find it easieer to get used to bootstrap 
+         when I am typing out the code
+        instead of copying and pasting the content.</p>
+
+      <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#myExtraLargeModal">
+        Open the extra large modal
+      </button>
+
+      <div class="modal fade" id="myExtraLargeModal">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h3>This is an extra large modal</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet
+                 consectetur adipisicing elit.'
+                 Aspernatur voluptates quas eligendi 
+                libero et dignissimos!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                Close the Extra Large Modal
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+
+    <!-- View all Modal Sizes -->
+    <div>
+      <h1>View all Modal Sizes</h1>
+      <p>View all modal sizes</p>
+      
+      <button 
+        type="button"
+        class="btn btn-info"
+        data-bs-toggle="modal"
+        data-bs-target="#allModalSizes">
+        View all the modal sizes
+      </button>
+      <!-- div[class="modal fade" id="allModalSizes"]>div[class="modal-dialog modal-sm"]+div[class="modal-dialog modal-lg"]+div[class="modal-dialog modal-xl"] -->
+      <div class="modal fade" id="allModalSizes">
+        
+        <div class="modal-dialog modal-sm">
+          <!-- div.modal-header>h3[class="modal-title"]+button[type="button" class="btn-close" data-bs-dismiss="modal"]^div.modal-body>p^div.modal-footer>button[type="button" class="btn btn-danger" data-bs-dismiss="modal"] -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">
+                Small modal
+              </h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis beatae libero nulla at rerum eveniet!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                Close all
+              </button>
+            </div>
+          </div>
+          
+        </div>
+        
+
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1>Default modal size - MEDIUM</h1>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum praesentium consequatur quas similique ullam corrupti?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                Close the Medium modal
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Large Modal</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed error vero ipsum architecto repellat? Possimus!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close the modal</button>
+            </div>
+
+          </div>
+            
+        </div>
+
+   
+        <div class="modal-dialog modal-xl">
+
+          <div class="modal-content"> 
+            <div class="modal-header">
+              <h3 class="modal-title"> Extra Large Modal</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod temporibus impedit fuga! Quia, itaque facere?</p>
+            </div>
+            <div class="modal-footer">
+              <button 
+                type="button" 
+                class="btn btn-danger" 
+                data-bs-dismiss="modal">
+              Close modal
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+        
+      
+      </div>
+    </div>
+
+  </div>
+
+</html>
