@@ -123,14 +123,14 @@
           </div>
 
         </div>
-        
       </div>
+      
 
     </div>
 
   </div>
   
-<!-- THIRD EXAMPLE -->
+<!-- MODAL SIZE - THIRD EXAMPLE -->
 
   <div>
     <h1>Third Examples - Modal Sizes
@@ -367,6 +367,484 @@
       </div>
     </div>
 
+    <!-- Full screen size modal -->
+    <div>
+      <h2>Full screen size modal</h1>
+      <p>I'm trying to make this modal without looking at previous modal examples and w3schools resources</p>
+      
+
+      <!-- Regular full screen modal -->
+      <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#fullScreenModal">
+        Open Full Screen Modal
+      </button>
+
+      <div class="modal fade" id="fullScreenModal">
+        
+        <!-- Size of the modal fullscreen -->
+        <div class="modal-dialog modal-fullscreen">
+        
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Full Screen Size Modal</h3>
+              <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat dignissimos repudiandae sapiente voluptatum aperiam magni.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button 
+      type="button" 
+      class="btn btn-info" 
+      data-bs-target="#fullScreenModalSmDown" 
+      data-bs-toggle="modal">
+      Open Responsive Full Screen Modal  
+    </button>
+
+    <div class="modal fade" id="fullScreenModalSmDown">
+
+      <!-- div[class="modal-dialog modal-fullscreen-sm-down"]>div.content>div.modal-header+div.modal-body+div.modal-footer -->
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>Small full screen modal</h1>
+          </div>
+          <div class="modal-body">
+            <p>I tried to create the modals by using the shortcut with html emmet</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-dialog modal-fullscreen-md-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>Medium full screen modal</h1>
+          </div>
+          <div class="modal-body">
+            <p>If full screen is medium then modal goes full.</p>
+          </div>
+          <div class="modal-footer">
+            <!-- button[type="button" class="btn btn-close" data-bs-dismiss="modal"] -->
+            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-dialog modal-fullscreen-lg-down">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <h3>This is a large dropdown modal </h3>
+          </div>
+          
+          <div class="modal-body">
+            <p>This is modal that goes full screen when the size of the modal is large.</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close" data-bs-dismiss="modal">
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="modal-dialog modal-fullscreen-xl-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>This is an extra large dropdown modal </h3>
+          </div>
+          <div class="modal-body">
+            <p>This is modal that goes full screen when the size of is extra large.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close" data-bs-dismiss="modal">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-dialog modal-fullscreen-xxl-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Extra Extra Large Modal</h3>
+          </div>
+          <div class="modal-body">
+            <p> If Screen size is extra extra large then the modal goes full screen.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-close" data-bs-dismiss="modal">
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
+
+
+  <!-- CONTENT POSITION - FIFTH EXAMPLE  -->
+  <div>
+    <h1>Content position</h1>
+
+    <!--Center Modal --> 
+    <!-- h2{This is a modal positioned in the Center}+button[type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target]+div[class="modal fade" id="centerModal"]>div[class="modal-dialog modal-dialog-centered"]>div.modal-content>div.modal-header>h3{This is a center modal}^div.modal-body>p{I am getting used to working with html emmet}^div.modal-footer>button[type="button" class="btn-close" data-bs-dismiss="modal"] -->
+    
+    <h2>This is a modal positioned in the Center</h2>
+    
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#centerModal">
+      Center Modal
+    </button>
+    
+    <div class="modal fade" id="centerModal">
+      
+      <div class="modal-dialog modal-dialog-centered">
+        
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <h3>This is a center modal</h3>
+          </div>
+          
+          <div class="modal-body">
+            <p>I am getting used to working with html emmet</p>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn-close" data-bs-dismiss="modal">
+            </button>
+          </div>
+        
+        </div>
+      
+      </div>
+    </div>
+
+  </div> 
+
+  <!-- Scrollable & Non-Scrollable modal -->
+  <div>
+    <h2>Scrollable modal positioned in the Center</h2>
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#scrollableModal">
+      Scrollable Modal 
+    </button>
+
+    <div class="modal fade" id="scrollableModal">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Scrollable modal</h3>
+          </div>
+          <div class="modal-body">
+            <p>
+              I am getting tired of typing everything up so I am copy-pasting everything. 
+              <br> <br>
+                Some text below to test scrolling inside a modal 
+              <br><br>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Amet earum quisquam minima quidem sed obcaecati quam rerum 
+              voluptatem aliquam ad voluptatum adipisci porro commodi fugiat
+              dolores nam architecto temporibus, iure impedit? Debitis unde assumenda
+              porro quasi illo quaerat hic laudantium maxime dolores aliquam?
+              Dolores dolore ex eos rem asperiores. Similique.
+
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Saepe esse magnam doloremque, reprehenderit doloribus consequuntur 
+              provident omnis quas ipsam obcaecati rerum nemo, similique tempore.
+              Cumque, id, maxime fugiat ullam et illo rerum obcaecati optio nisi
+              debitis magni atque sint harum explicabo hic quisquam magnam facere 
+              quam? Enim vel corporis voluptates sequi, tempore ipsa necessitatibus 
+              laborum dicta id qui doloremque. Quis minima exercitationem fuga, dolore
+              ducimus voluptatum sunt perferendis, sequi officiis soluta animi, inventore
+              iste. Expedita, ipsum temporibus corporis aspernatur perspiciatis, in
+              cumque enim modi nesciunt repellendus assumenda 
+              distinctio illum ullam atque aliquam eaque veniam. 
+              Quae voluptatibus excepturi aperiam voluptas quas.
+
+              orem ipsum dolor sit amet consectetur, adipisicing elit. Commodi laudantium 
+              praesentium minus id sunt vero labore quaerat debitis 
+              voluptate, vitae possimus modi assumenda ut eveniet officia laboriosam 
+              in soluta maiores earum delectus esse accusamus placeat! Non placeat eum 
+              praesentium commodi officiis consectetur! Et sit ipsa quo iure, id ducimus, error odit 
+              officiis fugit possimus quidem dolor labore veniam numquam nobis accusamus aut laborum, 
+              quibusdam aliquid pariatur odio doloribus corrupti aspernatur. 
+              At minus explicabo laboriosam rem tempora? Ea omnis, odit, quia labore 
+              explicabo pariatur repellendus voluptatum accusamus assumenda repudiandae neque facere 
+              aspernatur mollitia tempore? Voluptatem voluptates vel rerum eligendi 
+              est dolores architecto possimus nulla, suscipit ex esse 
+              quas hic eius nobis fugiat neque nihil vero quia ipsum veritatis! Quia, 
+              vitae magni? Velit nihil suscipit maiores obcaecati amet. Unde facere impedit vel 
+              voluptates, vero perferendis quia rem iste porro error voluptatibus 
+              nulla eum fugit quaerat sapiente obcaecati cum doloremque nemo! Quis at, 
+              impedit placeat atque nobis possimus optio saepe quaerat vero sint recusandae 
+              soluta accusantium quibusdam inventore maxime laudantium quo nisi aliquam! Non 
+              voluptatem amet alias saepe odio corrupti dolorum eius asperiores animi dignissimos! 
+              Molestiae ea laudantium laborum? Aliquam dolorum unde impedit perspiciatis, sit sint, 
+              minima repudiandae placeat quo cumque, exercitationem fuga ad optio. Aspernatur odit 
+              facilis porro exercitationem. Temporibus tempore reprehenderit, qui officia non nulla 
+              corporis ratione! Quas deleniti molestiae accusantium voluptas placeat et, aperiam deserunt 
+              veniam incidunt, in voluptatibus eum impedit officiis modi magnam quaerat, ipsum voluptates 
+              iste eos officia qui enim! Voluptas assumenda dolorum, officiis itaque natus eligendi voluptatum!
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Amet earum quisquam minima quidem sed obcaecati quam rerum 
+              voluptatem aliquam ad voluptatum adipisci porro commodi fugiat
+              dolores nam architecto temporibus, iure impedit? Debitis unde assumenda
+              porro quasi illo quaerat hic laudantium maxime dolores aliquam?
+              Dolores dolore ex eos rem asperiores. Similique.
+
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Saepe esse magnam doloremque, reprehenderit doloribus consequuntur 
+              provident omnis quas ipsam obcaecati rerum nemo, similique tempore.
+              Cumque, id, maxime fugiat ullam et illo rerum obcaecati optio nisi
+              debitis magni atque sint harum explicabo hic quisquam magnam facere 
+              quam? Enim vel corporis voluptates sequi, tempore ipsa necessitatibus 
+              laborum dicta id qui doloremque. Quis minima exercitationem fuga, dolore
+              ducimus voluptatum sunt perferendis, sequi officiis soluta animi, inventore
+              iste. Expedita, ipsum temporibus corporis aspernatur perspiciatis, in
+              cumque enim modi nesciunt repellendus assumenda 
+              distinctio illum ullam atque aliquam eaque veniam. 
+              Quae voluptatibus excepturi aperiam voluptas quas.
+
+              orem ipsum dolor sit amet consectetur, adipisicing elit. Commodi laudantium 
+              praesentium minus id sunt vero labore quaerat debitis 
+              voluptate, vitae possimus modi assumenda ut eveniet officia laboriosam 
+              in soluta maiores earum delectus esse accusamus placeat! Non placeat eum 
+              praesentium commodi officiis consectetur! Et sit ipsa quo iure, id ducimus, error odit 
+              officiis fugit possimus quidem dolor labore veniam numquam nobis accusamus aut laborum, 
+              quibusdam aliquid pariatur odio doloribus corrupti aspernatur. 
+              At minus explicabo laboriosam rem tempora? Ea omnis, odit, quia labore 
+              explicabo pariatur repellendus voluptatum accusamus assumenda repudiandae neque facere 
+              aspernatur mollitia tempore? Voluptatem voluptates vel rerum eligendi 
+              est dolores architecto possimus nulla, suscipit ex esse 
+              quas hic eius nobis fugiat neque nihil vero quia ipsum veritatis! Quia, 
+              vitae magni? Velit nihil suscipit maiores obcaecati amet. Unde facere impedit vel 
+              voluptates, vero perferendis quia rem iste porro error voluptatibus 
+              nulla eum fugit quaerat sapiente obcaecati cum doloremque nemo! Quis at, 
+              impedit placeat atque nobis possimus optio saepe quaerat vero sint recusandae 
+              soluta accusantium quibusdam inventore maxime laudantium quo nisi aliquam! Non 
+              voluptatem amet alias saepe odio corrupti dolorum eius asperiores animi dignissimos! 
+              Molestiae ea laudantium laborum? Aliquam dolorum unde impedit perspiciatis, sit sint, 
+              minima repudiandae placeat quo cumque, exercitationem fuga ad optio. Aspernatur odit 
+              facilis porro exercitationem. Temporibus tempore reprehenderit, qui officia non nulla 
+              corporis ratione! Quas deleniti molestiae accusantium voluptas placeat et, aperiam deserunt 
+              veniam incidunt, in voluptatibus eum impedit officiis modi magnam quaerat, ipsum voluptates 
+              iste eos officia qui enim! Voluptas assumenda dolorum, officiis itaque natus eligendi voluptatum!
+
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Amet earum quisquam minima quidem sed obcaecati quam rerum 
+              voluptatem aliquam ad voluptatum adipisci porro commodi fugiat
+              dolores nam architecto temporibus, iure impedit? Debitis unde assumenda
+              porro quasi illo quaerat hic laudantium maxime dolores aliquam?
+              Dolores dolore ex eos rem asperiores. Similique.
+
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Saepe esse magnam doloremque, reprehenderit doloribus consequuntur 
+              provident omnis quas ipsam obcaecati rerum nemo, similique tempore.
+              Cumque, id, maxime fugiat ullam et illo rerum obcaecati optio nisi
+              debitis magni atque sint harum explicabo hic quisquam magnam facere 
+              quam? Enim vel corporis voluptates sequi, tempore ipsa necessitatibus 
+              laborum dicta id qui doloremque. Quis minima exercitationem fuga, dolore
+              ducimus voluptatum sunt perferendis, sequi officiis soluta animi, inventore
+              iste. Expedita, ipsum temporibus corporis aspernatur perspiciatis, in
+              cumque enim modi nesciunt repellendus assumenda 
+              distinctio illum ullam atque aliquam eaque veniam. 
+              Quae voluptatibus excepturi aperiam voluptas quas.
+
+              orem ipsum dolor sit amet consectetur, adipisicing elit. Commodi laudantium 
+              praesentium minus id sunt vero labore quaerat debitis 
+              voluptate, vitae possimus modi assumenda ut eveniet officia laboriosam 
+              in soluta maiores earum delectus esse accusamus placeat! Non placeat eum 
+              praesentium commodi officiis consectetur! Et sit ipsa quo iure, id ducimus, error odit 
+              officiis fugit possimus quidem dolor labore veniam numquam nobis accusamus aut laborum, 
+              quibusdam aliquid pariatur odio doloribus corrupti aspernatur. 
+              At minus explicabo laboriosam rem tempora? Ea omnis, odit, quia labore 
+              explicabo pariatur repellendus voluptatum accusamus assumenda repudiandae neque facere 
+              aspernatur mollitia tempore? Voluptatem voluptates vel rerum eligendi 
+              est dolores architecto possimus nulla, suscipit ex esse 
+              quas hic eius nobis fugiat neque nihil vero quia ipsum veritatis! Quia, 
+              vitae magni? Velit nihil suscipit maiores obcaecati amet. Unde facere impedit vel 
+              voluptates, vero perferendis quia rem iste porro error voluptatibus 
+              nulla eum fugit quaerat sapiente obcaecati cum doloremque nemo! Quis at, 
+              impedit placeat atque nobis possimus optio saepe quaerat vero sint recusandae 
+              soluta accusantium quibusdam inventore maxime laudantium quo nisi aliquam! Non 
+              voluptatem amet alias saepe odio corrupti dolorum eius asperiores animi dignissimos! 
+              Molestiae ea laudantium laborum? Aliquam dolorum unde impedit perspiciatis, sit sint, 
+              minima repudiandae placeat quo cumque, exercitationem fuga ad optio. Aspernatur odit 
+              facilis porro exercitationem. Temporibus tempore reprehenderit, qui officia non nulla 
+              corporis ratione! Quas deleniti molestiae accusantium voluptas placeat et, aperiam deserunt 
+              veniam incidunt, in voluptatibus eum impedit officiis modi magnam quaerat, ipsum voluptates 
+              iste eos officia qui enim! Voluptas assumenda dolorum, officiis itaque natus eligendi voluptatum!
+            </p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        </div>
+      </div>
+
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Non Scrollable modal</h3>
+          </div>
+          <div class="modal-body">
+            <p>
+              I am getting tired of typing everything up so I am copy-pasting everything. 
+              <br> <br>
+                Some text below to test scrolling inside a modal 
+              <br><br>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Amet earum quisquam minima quidem sed obcaecati quam rerum 
+              voluptatem aliquam ad voluptatum adipisci porro commodi fugiat
+              dolores nam architecto temporibus, iure impedit? Debitis unde assumenda
+              porro quasi illo quaerat hic laudantium maxime dolores aliquam?
+              Dolores dolore ex eos rem asperiores. Similique.
+
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Saepe esse magnam doloremque, reprehenderit doloribus consequuntur 
+              provident omnis quas ipsam obcaecati rerum nemo, similique tempore.
+              Cumque, id, maxime fugiat ullam et illo rerum obcaecati optio nisi
+              debitis magni atque sint harum explicabo hic quisquam magnam facere 
+              quam? Enim vel corporis voluptates sequi, tempore ipsa necessitatibus 
+              laborum dicta id qui doloremque. Quis minima exercitationem fuga, dolore
+              ducimus voluptatum sunt perferendis, sequi officiis soluta animi, inventore
+              iste. Expedita, ipsum temporibus corporis aspernatur perspiciatis, in
+              cumque enim modi nesciunt repellendus assumenda 
+              distinctio illum ullam atque aliquam eaque veniam. 
+              Quae voluptatibus excepturi aperiam voluptas quas.
+
+              orem ipsum dolor sit amet consectetur, adipisicing elit. Commodi laudantium 
+              praesentium minus id sunt vero labore quaerat debitis 
+              voluptate, vitae possimus modi assumenda ut eveniet officia laboriosam 
+              in soluta maiores earum delectus esse accusamus placeat! Non placeat eum 
+              praesentium commodi officiis consectetur! Et sit ipsa quo iure, id ducimus, error odit 
+              officiis fugit possimus quidem dolor labore veniam numquam nobis accusamus aut laborum, 
+              quibusdam aliquid pariatur odio doloribus corrupti aspernatur. 
+              At minus explicabo laboriosam rem tempora? Ea omnis, odit, quia labore 
+              explicabo pariatur repellendus voluptatum accusamus assumenda repudiandae neque facere 
+              aspernatur mollitia tempore? Voluptatem voluptates vel rerum eligendi 
+              est dolores architecto possimus nulla, suscipit ex esse 
+              quas hic eius nobis fugiat neque nihil vero quia ipsum veritatis! Quia, 
+              vitae magni? Velit nihil suscipit maiores obcaecati amet. Unde facere impedit vel 
+              voluptates, vero perferendis quia rem iste porro error voluptatibus 
+              nulla eum fugit quaerat sapiente obcaecati cum doloremque nemo! Quis at, 
+              impedit placeat atque nobis possimus optio saepe quaerat vero sint recusandae 
+              soluta accusantium quibusdam inventore maxime laudantium quo nisi aliquam! Non 
+              voluptatem amet alias saepe odio corrupti dolorum eius asperiores animi dignissimos! 
+              Molestiae ea laudantium laborum? Aliquam dolorum unde impedit perspiciatis, sit sint, 
+              minima repudiandae placeat quo cumque, exercitationem fuga ad optio. Aspernatur odit 
+              facilis porro exercitationem. Temporibus tempore reprehenderit, qui officia non nulla 
+              corporis ratione! Quas deleniti molestiae accusantium voluptas placeat et, aperiam deserunt 
+              veniam incidunt, in voluptatibus eum impedit officiis modi magnam quaerat, ipsum voluptates 
+              iste eos officia qui enim! Voluptas assumenda dolorum, officiis itaque natus eligendi voluptatum!
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Amet earum quisquam minima quidem sed obcaecati quam rerum 
+              voluptatem aliquam ad voluptatum adipisci porro commodi fugiat
+              dolores nam architecto temporibus, iure impedit? Debitis unde assumenda
+              porro quasi illo quaerat hic laudantium maxime dolores aliquam?
+              Dolores dolore ex eos rem asperiores. Similique.
+
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Saepe esse magnam doloremque, reprehenderit doloribus consequuntur 
+              provident omnis quas ipsam obcaecati rerum nemo, similique tempore.
+              Cumque, id, maxime fugiat ullam et illo rerum obcaecati optio nisi
+              debitis magni atque sint harum explicabo hic quisquam magnam facere 
+              quam? Enim vel corporis voluptates sequi, tempore ipsa necessitatibus 
+              laborum dicta id qui doloremque. Quis minima exercitationem fuga, dolore
+              ducimus voluptatum sunt perferendis, sequi officiis soluta animi, inventore
+              iste. Expedita, ipsum temporibus corporis aspernatur perspiciatis, in
+              cumque enim modi nesciunt repellendus assumenda 
+              distinctio illum ullam atque aliquam eaque veniam. 
+              Quae voluptatibus excepturi aperiam voluptas quas.
+
+              orem ipsum dolor sit amet consectetur, adipisicing elit. Commodi laudantium 
+              praesentium minus id sunt vero labore quaerat debitis 
+              voluptate, vitae possimus modi assumenda ut eveniet officia laboriosam 
+              in soluta maiores earum delectus esse accusamus placeat! Non placeat eum 
+              praesentium commodi officiis consectetur! Et sit ipsa quo iure, id ducimus, error odit 
+              officiis fugit possimus quidem dolor labore veniam numquam nobis accusamus aut laborum, 
+              quibusdam aliquid pariatur odio doloribus corrupti aspernatur. 
+              At minus explicabo laboriosam rem tempora? Ea omnis, odit, quia labore 
+              explicabo pariatur repellendus voluptatum accusamus assumenda repudiandae neque facere 
+              aspernatur mollitia tempore? Voluptatem voluptates vel rerum eligendi 
+              est dolores architecto possimus nulla, suscipit ex esse 
+              quas hic eius nobis fugiat neque nihil vero quia ipsum veritatis! Quia, 
+              vitae magni? Velit nihil suscipit maiores obcaecati amet. Unde facere impedit vel 
+              voluptates, vero perferendis quia rem iste porro error voluptatibus 
+              nulla eum fugit quaerat sapiente obcaecati cum doloremque nemo! Quis at, 
+              impedit placeat atque nobis possimus optio saepe quaerat vero sint recusandae 
+              soluta accusantium quibusdam inventore maxime laudantium quo nisi aliquam! Non 
+              voluptatem amet alias saepe odio corrupti dolorum eius asperiores animi dignissimos! 
+              Molestiae ea laudantium laborum? Aliquam dolorum unde impedit perspiciatis, sit sint, 
+              minima repudiandae placeat quo cumque, exercitationem fuga ad optio. Aspernatur odit 
+              facilis porro exercitationem. Temporibus tempore reprehenderit, qui officia non nulla 
+              corporis ratione! Quas deleniti molestiae accusantium voluptas placeat et, aperiam deserunt 
+              veniam incidunt, in voluptatibus eum impedit officiis modi magnam quaerat, ipsum voluptates 
+              iste eos officia qui enim! Voluptas assumenda dolorum, officiis itaque natus eligendi voluptatum!
+
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Amet earum quisquam minima quidem sed obcaecati quam rerum 
+              voluptatem aliquam ad voluptatum adipisci porro commodi fugiat
+              dolores nam architecto temporibus, iure impedit? Debitis unde assumenda
+              porro quasi illo quaerat hic laudantium maxime dolores aliquam?
+              Dolores dolore ex eos rem asperiores. Similique.
+
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Saepe esse magnam doloremque, reprehenderit doloribus consequuntur 
+              provident omnis quas ipsam obcaecati rerum nemo, similique tempore.
+              Cumque, id, maxime fugiat ullam et illo rerum obcaecati optio nisi
+              debitis magni atque sint harum explicabo hic quisquam magnam facere 
+              quam? Enim vel corporis voluptates sequi, tempore ipsa necessitatibus 
+              laborum dicta id qui doloremque. Quis minima exercitationem fuga, dolore
+              ducimus voluptatum sunt perferendis, sequi officiis soluta animi, inventore
+              iste. Expedita, ipsum temporibus corporis aspernatur perspiciatis, in
+              cumque enim modi nesciunt repellendus assumenda 
+              distinctio illum ullam atque aliquam eaque veniam. 
+              Quae voluptatibus excepturi aperiam voluptas quas.
+
+              orem ipsum dolor sit amet consectetur, adipisicing elit. Commodi laudantium 
+              praesentium minus id sunt vero labore quaerat debitis 
+              voluptate, vitae possimus modi assumenda ut eveniet officia laboriosam 
+              in soluta maiores earum delectus esse accusamus placeat! Non placeat eum 
+              praesentium commodi officiis consectetur! Et sit ipsa quo iure, id ducimus, error odit 
+              officiis fugit possimus quidem dolor labore veniam numquam nobis accusamus aut laborum, 
+              quibusdam aliquid pariatur odio doloribus corrupti aspernatur. 
+              At minus explicabo laboriosam rem tempora? Ea omnis, odit, quia labore 
+              explicabo pariatur repellendus voluptatum accusamus assumenda repudiandae neque facere 
+              aspernatur mollitia tempore? Voluptatem voluptates vel rerum eligendi 
+              est dolores architecto possimus nulla, suscipit ex esse 
+              quas hic eius nobis fugiat neque nihil vero quia ipsum veritatis! Quia, 
+              vitae magni? Velit nihil suscipit maiores obcaecati amet. Unde facere impedit vel 
+              voluptates, vero perferendis quia rem iste porro error voluptatibus 
+              nulla eum fugit quaerat sapiente obcaecati cum doloremque nemo! Quis at, 
+              impedit placeat atque nobis possimus optio saepe quaerat vero sint recusandae 
+              soluta accusantium quibusdam inventore maxime laudantium quo nisi aliquam! Non 
+              voluptatem amet alias saepe odio corrupti dolorum eius asperiores animi dignissimos! 
+              Molestiae ea laudantium laborum? Aliquam dolorum unde impedit perspiciatis, sit sint, 
+              minima repudiandae placeat quo cumque, exercitationem fuga ad optio. Aspernatur odit 
+              facilis porro exercitationem. Temporibus tempore reprehenderit, qui officia non nulla 
+              corporis ratione! Quas deleniti molestiae accusantium voluptas placeat et, aperiam deserunt 
+              veniam incidunt, in voluptatibus eum impedit officiis modi magnam quaerat, ipsum voluptates 
+              iste eos officia qui enim! Voluptas assumenda dolorum, officiis itaque natus eligendi voluptatum!
+            </p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
 
 </html>
