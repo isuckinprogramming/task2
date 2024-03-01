@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Bar Page</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-info">
+
+  <!-- div.progress>div[class="progress-bar" style="width:69%"] -->
+
+  <div class="container-fluid">
+    <h1>Normal Single Progress Bar </h1>
+    <div class="progress">
+      <!-- 
+        Might be better not to put any other element inside the progress bar element
+        <p>Test</p> -->
+      <div class="progress-bar" style="width:69%">69%</div>
+    </div>
+  </div>
+
+
+  <!-- div[class]>h1{Different sizes of progress bars}>div[class='progress' style='height:40px'] -->
+  <div class="container-lg">
+    <h1>Different sizes of progress bars</h1>
+    <!-- 40 px -->
+    <h3>40 px height : inline styling within the progress element </h3>
+    <div class="progress" style="height:40px">
+      <div class="progress-bar" style="width:30%">30%</div>
+    </div>
+    
+    <!-- div[class="progress"]>div[class="progress-bar" style="width:50%;height:20px"] -->
+    <h3>20 px height : inline styling within the progress-bar element </h3>
+    <div class="progress">
+      <div class="progress-bar" style="width:50%;height:20px">50%</div>
+    </div>
+  </div>
+
+  <!-- different colored progress bars -->
+  <!-- div.container-lg>(div[class="progress bg-info-subtle"]>div[class="progress-bar bg-" style="width:$0%"])*8 -->
+  
+  <div class="container-lg ">
+    
+    <div class="progress bg-info-subtle" >
+      <div class="progress-bar bg-success" style="width:10%">success</div>
+    </div>
+    <div class="progress bg-info-subtle">
+      <div class="progress-bar bg-info" style="width:20%">info</div>
+    </div>
+    <div class="progress bg-info-subtle">
+      <div class="progress-bar bg-danger" style="width:30%">danger</div>
+    </div>
+    <div class="progress bg-info-subtle">
+      <div class="progress-bar bg-primary" style="width:40%">primary</div>
+    </div>
+    <div class="progress bg-info-subtle">
+      <div class="progress-bar bg-secondary" style="width:50%">secondary</div>
+    </div>
+    <div class="progress bg-info-subtle">
+      <div class="progress-bar bg-warning" style="width:60%">warning</div>
+    </div>
+    <div class="progress bg-info-subtle">
+      <div class="progress-bar bg-dark" style="width:70%">dark</div>
+    </div>
+    <div class="progress bg-black">
+      <!-- Will not turn the color of the text into white no matter what I did. -->
+      <div class="progress-bar bg-white text-bg-dark" style="width:80%; color: black;">white</div>
+    </div>
+  </div>
+
+   <!-- multiple progress bar inside a progress element --> 
+
+   <!-- div.progress>(div[class="progress-bar bg-" style="width=$0%;"])*3 -->
+   <!-- div.container-xxl>h1{Multiple progress bars}{Inside a div with the progress class, 3 progress bars } -->
+
+   <div class="container-xxl">
+    <h1>Multiple progress bars</h1>
+    Inside a div with the progress class, 3 progress bars 
+    <div class="progress">
+      <div class="progress-bar bg-primary progress-bar-striped" style="width:10%;"> 10% </div>
+      <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width:20%;">20% </div>
+      <div class="progress-bar bg-danger progress-stacked" style="width:30%;">30% </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
