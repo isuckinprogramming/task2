@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Basic</title>
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="container-fluid bg-info-subtle">
+  
+  <!-- sample basic grid  -->
+  <div class="container-fluid m-3 p-3 bg-info">
+    <h1>Grid basics</h1>
+    <h4> Full Sample Grid</h4>
+    <div class="row bg-danger-subtle">
+      
+      <div class="col-1">1
+        <div class="row bg-dark-subtle">
+          <!-- (div.col{$a})*3 -->
+          <div class="col">1a</div>
+          <div class="col">2a</div>
+          <div class="col">3a</div>
+        </div>
+      </div>
+
+      <div class="col-5 bg-success">2
+        <div class="row">
+          <div class="col-1 bg-primary">1b</div>
+          <div class="col-1 bg-primary-subtle">2b</div>
+          <div class="col-1 bg-primary">3b</div>
+          <div class="col-1 bg-primary-subtle">4b</div>
+          <div class="col-1 bg-primary">5b</div>
+          <div class="col-1 bg-primary-subtle">6b</div>
+          <div class="col-1 bg-primary">7b</div>
+          <div class="col-1 bg-primary-subtle">8b</div>
+          <div class="col-1 bg-primary">9b</div>
+          <div class="col-1 bg-primary-subtle">10b</div>
+          <div class="col-1 bg-primary">11b</div>
+          <div class="col-1 bg-primary-subtle">12b</div>
+        </div>
+      
+      </div>
+      
+      <div class="col-1 bg-danger" >3</div>
+      
+      <div class="col-1 bg-primary">4</div>
+    
+    </div>
+    <!-- div.row>(div.col-1{$})*12 -->
+    <div class="row">
+      <div class="col-1 bg-info">1</div>
+      <div class="col-1 bg-success-subtle">2</div>
+      <div class="col-1 bg-info">3</div>
+      <div class="col-1 bg-success-subtle">4</div>
+      <div class="col-1 bg-info">5</div>
+      <div class="col-1 bg-success-subtle">6</div>
+      <div class="col-1 bg-info">7</div>
+      <div class="col-1 bg-success-subtle">8</div>
+      <div class="col-1 bg-info">9</div>
+      <div class="col-1 bg-success-subtle">10</div>
+      <div class="col-1 bg-info">11</div>
+      <div class="col-1 bg-success-subtle">12</div>
+    </div>
+
+
+  </div>
+
+
+  <!-- Screen size responsize grid  -->
+  <!-- h1{Responsive Grid for Different Sizes}+p{Creating different grid columns that will change size depending on screen size} -->
+  <h1>Responsive Grid for Different Sizes</h1>
+  <p>Creating different grid columns that will change size depending on screen size</p>
+
+
+  
+  <!-- div.container-fluid>div[class="row m-3 p-3 bg-info"]>(div.col-sm-3{$})*4 -->
+  <h4>Responsive Grid for SM </h4>
+  <div class="container-fluid">
+    <div class="row m-3 p-3 bg-info">
+      <div class="col-sm-3">1</div>
+      <div class="col-sm-3">2</div>
+      <div class="col-sm-3">3</div>
+      <div class="col-sm-3">4</div>
+    </div>
+  </div>
+
+  <!-- h2{Responsive grid for MD}+div.container-fluid>div[class="row m-3 p-3 bg-info"]>(div.col-md-3{$})*4 -->
+  <h4>Responsive grid for MD</h4>
+  <div class="container-fluid">
+    <div class="row m-3 p-3 bg-info">
+      <div class="col-md-3">1</div>
+      <div class="col-md-3">2</div>
+      <div class="col-md-3">3</div>
+      <div class="col-md-3">4</div>
+    </div>
+  </div>
+
+  <!-- h4{Responsive grid for LG}+div.container-fluid>div[class="row m-3 p-3 bg-info"]>(div.col-lg-3{$})*4 -->
+  <h4>Responsive grid for LG</h4>
+  <div class="container-fluid">
+    <div class="row m-3 p-3 bg-info">
+      <div class="col-lg-3">1</div>
+      <div class="col-lg-3">2</div>
+      <div class="col-lg-3">3</div>
+      <div class="col-lg-3">4</div>
+    </div>
+  </div>
+
+  <!-- h4{Responsive grid for XL}+div.container-fluid>div[class="row m-3 p-3 bg-info"]>(div.col-xl-3{$})*4 -->
+  <h4>Responsive grid for XL</h4>
+  <div class="container-fluid">
+    <div class="row m-3 p-3 bg-info">
+      <div class="col-xl-3">1</div>
+      <div class="col-xl-3">2</div>
+      <div class="col-xl-3">3</div>
+      <div class="col-xl-3">4</div>
+    </div>
+  </div>
+
+  <!-- h4{Responsive grid for XXL}+div.container-fluid>div[class="row m-3 p-3 bg-info"]>(div.col-xxl-3{$})*4 -->
+  <h4>Responsive grid for XXL</h4>
+  <div class="container-fluid">
+    <div class="row m-3 p-3 bg-info">
+      <div class="col-xxl-3">1</div>
+      <div class="col-xxl-3">2</div>
+      <div class="col-xxl-3">3</div>
+      <div class="col-xxl-3">4</div>
+    </div>
+  </div>
+
+  <!-- UNEQUAL RESPONSIVE COLUMNS -->
+
+<!--   h4{Unequal Responsive Grid}+div>container-fluid>div[class="row m-3 p-3 bg-info"]>div[class="col-sm-2"]+div[class="col-sm-8"] -->
+  <h4>Unequal Responsive Grid</h4>
+  <div>
+    <container-fluid>
+      <div class="row m-3 p-3 bg-info">
+
+        <div class="col-sm-8 bg-success">col sm 8</div>
+        <div class="col-sm-2 bg-danger">col sm 2</div>
+        <div class="col-sm-1 bg-danger-subtle">col sm 1</div>
+
+      </div>
+    </container-fluid>
+  </div>
+
+<!-- SAMPLE GRID FROM W3SCHOOLS -->
+  <div class="container-fluid">
+    <!-- div[class="row m-3 p-2 bg-info"]>(div[class="col-1 border border-2"]{span 1})*12^div[class="row m-3 p-2 bg-info"]>(div.col-4{span 4})*3^div[class="row m-3 p-2 bg-info"]>div.col-4{span 4}+div.col-8{span 8}^div[class="row m-3 p-2 bg-info"]>(div.col-6{span 6})*2^div[class="row m-3 p-2 bg-info"]>div[class="col-12 border border-2"]{span 12} -->
+    <div class="row m-3 p-2 bg-info">
+      <div class="col-1 border border-2 ">span 1</div>
+      <div class="col-1 border border-2 ">span 1</div>
+      <div class="col-1 border border-2">span 1</div>
+      <div class="col-1 border border-2">span 1</div>
+      <div class="col-1 border border-2">span 1</div>
+      <div class="col-1 border border-2">span 1</div>
+      <div class="col-1 border border-2">span 1</div>
+      <div class="col-1 border border-2">span 1</div>
+      <div class="col-1 border border-2">span 1</div>
+      <div class="col-1 border border-2">span 1</div>
+      <div class="col-1 border border-2">span 1</div>
+      <div class="col-1 border border-2">span 1</div>
+    </div>
+    <div class="row m-3 p-2 bg-info">
+      <div class="col-4 border border-2">span 4</div>
+      <div class="col-4 border border-2">span 4</div>
+      <div class="col-4 border border-2">span 4</div>
+    </div>
+    <div class="row m-3 p-2 bg-info">
+      <div class="col-4 border border-2">span 4</div>
+      <div class="col-8 border border-2">span 8</div>
+    </div>
+    <div class="row m-3 p-2 bg-info">
+      <div class="col-6 border border-2">span 6</div>
+      <div class="col-6 border border-2">span 6</div>
+    </div>
+    <div class="row m-3 p-2 bg-info">
+      <div class="col-12 border border-2">span 12</div>
+    </div>
+
+  
+  </div>
+
+
+</body>
+</html>
